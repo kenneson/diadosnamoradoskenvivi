@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>De Kenneson para Viviane</title>
+</head>
+
+<body>
+    <div class="painel">
+        <h1> Feliz Dia dos Namorados</h1>
+        <img class="image" src="https://i.pinimg.com/originals/c6/9b/a2/c69ba24334e19da9b30bda006db5ca34.gif" alt="">
+        <h2>Aceita continuar a namorar comigo? </h2>
+        <a href="https://www.youtube.com/watch?v=gOmsn7KXqCk&ab_channel=RodolfoAbrantes"><button id="sim"> Sim! </button></a>
+        <button onmouseover="fuja()" id="nao"> Não! </button>
+        <p>De: Kenneson Anderson <br> Para: Viviane Borges</p>
+    </div>
+
+    <script>
+        function fuja() {
+            var botaoNao = document.getElementById("nao");
+
+            var larguraJanela = window.innerWidth;
+            var alturaJanela = window.innerHeight;
+
+            var maxX = larguraJanela - botaoNao.offsetWidth;
+            var maxY = alturaJanela - botaoNao.offsetHeight;
+
+            var aleatorioX = Math.floor(Math.random() * maxX);
+            var aleatorioY = Math.floor(Math.random() * maxY);
+
+            // Verifica se o novo valor de aleatorioX ultrapassa os limites
+            if (aleatorioX < 0) {
+                aleatorioX = 0;
+            } else if (aleatorioX > maxX) {
+                aleatorioX = maxX;
+            }
+
+            // Verifica se o novo valor de aleatorioY ultrapassa os limites
+            if (aleatorioY < 0) {
+                aleatorioY = 0;
+            } else if (aleatorioY > maxY) {
+                aleatorioY = maxY;
+            }
+
+            botaoNao.style.left = aleatorioX + "px";
+            botaoNao.style.top = aleatorioY + "px";
+        }
+    </script>
+</body>
+</html>

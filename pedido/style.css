@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Loved+by+the+King&display=swap');
+
+*{
+margin: 0;
+padding: 0;
+border: 0;
+font-size: 100%;
+font: inherit;
+box-sizing: border-box;
+}
+
+body{
+    background-color: #ffc8dd;
+}
+
+h2, h1 {
+    font-weight:500;
+    font-size: 28px;
+}
+
+.painel{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: auto;
+    background-color: white;
+    width: 500px;
+    height: 650px;
+    border-radius: 25px;
+    text-align: center;
+    padding-top: 50px;
+    font-family: 'Loved by the King', cursive;
+}
+
+p {
+ padding-top: 40px;
+ font-size: 22px;
+ font-weight: 400;
+}
+
+.image {
+    width: 300px;
+}
+
+
+#sim{
+    height: 40px;
+    width: 60px;
+    background-color: red;
+    border: 2px solid white;
+    border-radius: 10px;
+    color: white;
+    margin-left: -50px;
+    font-weight: 800;
+    font-size: 20px;
+}
+#nao{
+    position: absolute;
+    height: 40px;
+    width: 60px;
+    background-color: red;
+    border: 2px solid white;
+    border-radius: 10px;
+    color: white;
+    margin-left: 10px;
+    font-weight: 800;
+    font-size: 20px;
+}
